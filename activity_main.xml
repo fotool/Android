@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="217dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="00"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult2"
+        android:layout_width="217dp"
+        android:layout_height="191dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="00"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btna"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onBtnClick"
+        android:text="-1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnb"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="onBtnClick"
+        android:text="-1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult2"
+        app:layout_constraintEnd_toStartOf="@+id/btnB" />
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="onBtnClick"
+        android:text="+1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult1"
+        app:layout_constraintStart_toEndOf="@+id/btna" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onBtnClick"
+        android:text="+1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
